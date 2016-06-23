@@ -1,4 +1,15 @@
-useful-app {
+html, body {
   display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  flex-direction:  row;
+}
+
+useful-app {
+  flex: 1;
+}
+
+md-sidenav-layout {
   height: 100%;
 }

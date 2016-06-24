@@ -1,20 +1,24 @@
 <md-sidenav-layout>
-    <md-sidenav #sidenav mode="side" class="app-sidenav">
+    <md-sidenav #sidenav mode="pushe" class="app-sidenav">
+        <md-toolbar color="primary">
+            <span>U</span>
+            <span class="fill-remaining-space"></span>
+            <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened">
+                <md-icon aria-label="Menu" class="material-icons">close</md-icon>
+            </md-button>
+        </md-toolbar>
         <md-nav-list>
             <a md-list-item *ngFor="let navRoute of navRoutes" [routerLink]="navRoute.route">
                 <md-icon md-list-icon>{{navRoute.icon}}</md-icon>
                 <span md-line>{{navRoute.name}}</span>
-                <span md-line class="secondary">{{navRoute.description}}</span>                
+                <span md-line class="secondary">{{navRoute.description}}</span>
             </a>
         </md-nav-list>
     </md-sidenav>
     <md-toolbar color="primary">
-        <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened" >
-            <md-icon aria-label="Menu" class="material-icons">menu</md-icon>           
+        <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
+            <md-icon aria-label="Menu" class="material-icons">menu</md-icon>
         </md-button>
-        <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened" >
-            <md-icon aria-label="Menu" class="material-icons">chevron_left</md-icon>           
-        </md-button>         
         <h1 class="component-title">{{info.title}}</h1>
     </md-toolbar>
     <div class="app-content">

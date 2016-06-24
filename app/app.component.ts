@@ -7,7 +7,7 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 import {MdSpinner} from '@angular2-material/progress-circle';
-import {MdToolbar} from '@angular2-material/toolbar';
+import {MD_TOOLBAR_DIRECTIVES} from '@angular2-material/toolbar';
 import {MdButton} from '@angular2-material/button';
 
 import {IComponentInfo} from './shared/icomponent-info';
@@ -29,7 +29,7 @@ import {QuoteService} from './content/quote.service';
     MD_LIST_DIRECTIVES,
     MD_CARD_DIRECTIVES,
     ROUTER_DIRECTIVES,
-    MdToolbar,
+    MD_TOOLBAR_DIRECTIVES,
     MdButton,
     MdIcon
   ]

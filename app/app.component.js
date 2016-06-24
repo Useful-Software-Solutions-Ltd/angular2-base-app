@@ -59,7 +59,7 @@ var AppComponent = (function () {
                 list_1.MD_LIST_DIRECTIVES,
                 card_1.MD_CARD_DIRECTIVES,
                 router_1.ROUTER_DIRECTIVES,
-                toolbar_1.MdToolbar,
+                toolbar_1.MD_TOOLBAR_DIRECTIVES,
                 button_1.MdButton,
                 icon_1.MdIcon
             ]

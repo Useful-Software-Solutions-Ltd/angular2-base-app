@@ -17,22 +17,34 @@ body {
 }
 
 useful-app, .useful-app {
+  display: flex;
   flex: 0.9;
 }
 
 .splash-container {
+  flex: 1;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: center
 }
 
 .splash-screen {
   flex: 1;
   align-content: center;
+  text-align: center;
 }
 
-
-footer{
-  flex: 0.1;
+footer {
+  flex: 0.1;  
   background-color: rgba(47, 79,79, 10);
+  color: whitesmoke;  
+  padding: 5px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.copyright-statement {
+  text-align: center;
+  vertical-align: bottom;
+  flex:1;
 }

@@ -1,4 +1,6 @@
-
+md-sidenav-layout {
+  flex: 1;
+}
 
 .sidenav-toggle-button {  
     cursor: pointer;

@@ -36,6 +36,7 @@ useful-app, .useful-app {
 
 footer {
   flex: 0.1;  
+  flex-direction: column;
   background-color: rgba(47, 79,79, 10);
   color: whitesmoke;  
   padding: 5px;
@@ -43,8 +44,13 @@ footer {
   justify-content: flex-end;
 }
 
-.copyright-statement {
+.footer-content{
+  flex: 0.8
+}
+
+.footer-copyright {
+  flex:0.2;  
   text-align: center;
+  align-content: center;
   vertical-align: bottom;
-  flex:1;
 }

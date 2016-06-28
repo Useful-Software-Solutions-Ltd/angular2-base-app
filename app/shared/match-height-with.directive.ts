@@ -27,7 +27,11 @@ export class MatchHeightWithDirective implements OnChanges {
 
     setHeight() {
         if (this.source) {
-            console.log("adjusting " + this.target.nodeName + " height from  " + this.target.clientHeight + " to " + this.source.clientHeight);
+            console.log(this.target.clientHeight);            
+            
+            this.target.style.height = '0px';
+                        
+            //console.log("adjusting " + this.target.nodeName + " height from  " + this.target.clientHeight + " to " + this.source.clientHeight);
             this.target.style.height = <any>this.source.clientHeight;
         }
     }

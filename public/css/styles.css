@@ -5,6 +5,7 @@ html {
 body {
     flex: 1;      
     font-family: Calibri, sans-serif;
+    min-height: 600px;
   }
 
 .flex-container {
@@ -17,11 +18,21 @@ body {
 
 useful-app, .useful-app {
   flex: 0.9;
-  overflow: auto;
 }
+
+.splash-container {
+  flex-direction: row;
+  align-content: center;
+  justify-content: center
+}
+
+.splash-screen {
+  flex: 1;
+  align-content: center;
+}
+
 
 footer{
   flex: 0.1;
-  flex-shrink: 0;
   background-color: rgba(47, 79,79, 10);
 }

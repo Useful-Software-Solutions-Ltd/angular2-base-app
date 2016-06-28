@@ -25,7 +25,9 @@ var MatchHeightWithDirective = (function () {
     };
     MatchHeightWithDirective.prototype.setHeight = function () {
         if (this.source) {
-            console.log("adjusting " + this.target.nodeName + " height from  " + this.target.clientHeight + " to " + this.source.clientHeight);
+            console.log(this.target.clientHeight);
+            this.target.style.height = '0px';
+            //console.log("adjusting " + this.target.nodeName + " height from  " + this.target.clientHeight + " to " + this.source.clientHeight);
             this.target.style.height = this.source.clientHeight;
         }
     };

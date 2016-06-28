@@ -17,6 +17,7 @@ var list_1 = require('@angular2-material/list');
 var icon_1 = require('@angular2-material/icon');
 var toolbar_1 = require('@angular2-material/toolbar');
 var button_1 = require('@angular2-material/button');
+var match_height_with_directive_1 = require('./shared/match-height-with.directive');
 var quote_service_1 = require('./content/quote.service');
 var AppComponent = (function () {
     function AppComponent() {
@@ -41,8 +42,6 @@ var AppComponent = (function () {
             route: '/demo',
             icon: 'description'
         });
-        //temporary fix until usAsDefault gets added to rc
-        //this.router.navigate(['/home']);
     };
     AppComponent = __decorate([
         core_1.Component({
@@ -61,7 +60,8 @@ var AppComponent = (function () {
                 router_1.ROUTER_DIRECTIVES,
                 toolbar_1.MD_TOOLBAR_DIRECTIVES,
                 button_1.MdButton,
-                icon_1.MdIcon
+                icon_1.MdIcon,
+                match_height_with_directive_1.MatchHeightWithDirective
             ]
         }), 
         __metadata('design:paramtypes', [])

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {HTTP_PROVIDERS} from '@angular/http';
 import {ROUTER_DIRECTIVES} from '@angular/router';
 
@@ -11,6 +11,7 @@ import {MD_TOOLBAR_DIRECTIVES} from '@angular2-material/toolbar';
 import {MdButton} from '@angular2-material/button';
 
 import {IComponentInfo} from './shared/icomponent-info';
+import {MatchHeightWithDirective} from './shared/match-height-with.directive';
 
 import {QuoteService} from './content/quote.service';
 
@@ -31,12 +32,15 @@ import {QuoteService} from './content/quote.service';
     ROUTER_DIRECTIVES,
     MD_TOOLBAR_DIRECTIVES,
     MdButton,
-    MdIcon
+    MdIcon,
+    MatchHeightWithDirective
   ]
 })
 
 
 export class AppComponent implements OnInit {
+  height: number;
+  
   info: IComponentInfo = {
     title: 'Useful base app',
     description: 'Useful Angular 2 base app with routing and material',
@@ -64,8 +68,5 @@ export class AppComponent implements OnInit {
       route: '/demo',
       icon: 'description'
     });
-
-    //temporary fix until usAsDefault gets added to rc
-    //this.router.navigate(['/home']);
   }
 }

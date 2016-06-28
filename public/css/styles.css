@@ -1,5 +1,13 @@
 html {
   height: 100%;
+}
+
+body {
+    flex: 1;      
+    font-family: Calibri, sans-serif;
+  }
+
+.flex-container {
   display: flex;
   flex-direction: column;        
   align-items: stretch;
@@ -7,20 +15,9 @@ html {
   justify-content: flex-start;
 }
 
-body {
-    flex: 1;      
-    font-family: Calibri, sans-serif; 
-    display: flex;
-    flex-direction: column;        
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: flex-start;  
-  }
-
-
 useful-app, .useful-app {
-  flex-shrink: 1;
   flex: 0.9;
+  overflow: auto;
 }
 
 footer{

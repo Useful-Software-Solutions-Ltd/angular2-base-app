@@ -13,7 +13,8 @@
     "lite": "lite-server -c bs-config.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings",
+    "setup": "typings install && npm install"
   },
   "keywords": [
     "Angular2"

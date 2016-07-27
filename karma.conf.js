@@ -37,19 +37,12 @@ module.exports = function (config) {
       { pattern: 'node_modules/@angular2-material/**/*.js', included: false, watched: true },
       { pattern: 'node_modules/@angular2-material/**/*.js.map', included: false, watched: true },
 
-      //application code
-      { pattern: 'src/**/*.js', included: false, watched: true },
-      { pattern: 'src/**/*.html', included: false, watched: true },
-      { pattern: 'src/**/*.css', included: false, watched: true },
-      { pattern: 'src/**/*.ts', included: false, watched: false },
-      { pattern: 'src/**/*.js.map', included: false, watched: false },
-
-      //demo code
-      { pattern: 'demo/**/*.js', included: false, watched: true },
-      { pattern: 'demo/**/*.html', included: false, watched: true },
-      { pattern: 'demo/**/*.css', included: false, watched: true },
-      { pattern: 'demo/**/*.ts', included: false, watched: false },
-      { pattern: 'demo/**/*.js.map', included: false, watched: false },
+      //application code      
+      { pattern: 'app/**/*.js', included: false, watched: true },
+      { pattern: 'app/**/*.html', included: false, watched: true },
+      { pattern: 'app/**/*.css', included: false, watched: true },
+      { pattern: 'app/**/*.ts', included: false, watched: false },
+      { pattern: 'app/**/*.js.map', included: false, watched: false },
 
       //path to the tests
       { pattern: 'test/**/*.js', included: false, watched: true },

@@ -39,7 +39,6 @@ import {QuoteService} from './content/quote.service';
 
 
 export class AppComponent implements OnInit {
-  height: number;
   
   info: IComponentInfo = {
     title: 'Useful base app',

@@ -1,5 +1,45 @@
+.app-flexbox {
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;        
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
 md-sidenav-layout {
-  flex: 1;
+  height: auto;
+  flex: 0.9;
+  overflow: visible;
+}
+
+footer {
+  flex: 0.1;  
+  background-color: rgba(47, 79,79, 10);
+  color: whitesmoke;  
+  padding: 5px;
+  display: flex;
+  flex-direction: column;        
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: flex-start;
+}
+
+.footer-content{
+  flex: 0.8
+}
+
+.footer-copyright {
+  flex:0.2;  
+  text-align: center;
+  align-content: center;
+  vertical-align: bottom;
+}
+
+router-outlet{
+  display: none;
 }
 
 .sidenav-toggle-button {  
@@ -14,3 +54,4 @@ md-nav-list {
 .fill-remaining-space {
   flex: 1 1 auto;
 }
+

@@ -1,10 +1,12 @@
 html {
-  min-height: 99%;
+  min-height: 100%;
 }
 
 body {   
     font-family: Calibri, sans-serif;    
-    min-height: 99%;
+    min-height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 .flex-container {
@@ -15,8 +17,8 @@ body {
   justify-content: flex-start;
 }
 
-useful-app, .useful-app {
-  height: 99%;
+useful-app {
+  min-height: 100%;
 }
 
 .splash-container {

@@ -1,10 +1,10 @@
 html {
-  height: 99%;
+  min-height: 99%;
 }
 
 body {   
     font-family: Calibri, sans-serif;    
-    height: 99%;
+    min-height: 99%;
   }
 
 .flex-container {

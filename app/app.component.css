@@ -12,7 +12,6 @@
 md-sidenav-layout {
   height: auto;
   flex: 0.9;
-  overflow: visible;
 }
 
 footer {

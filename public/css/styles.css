@@ -33,3 +33,7 @@ useful-app {
   align-content: center;
   text-align: center;
 }
+
+md-content {
+  overflow: visible !important;
+}

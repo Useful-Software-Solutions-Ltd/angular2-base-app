@@ -9,23 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DemoComponent = (function () {
-    function DemoComponent() {
-        this.info = {
-            title: 'Demo',
-            description: 'Some useful stuff ready to go',
-            feedback: '',
-            isBusy: false
-        };
+var home_component_1 = require('./home.component');
+var demo_component_1 = require('./demo.component');
+var http_1 = require('@angular/http');
+var content_routing_1 = require('./content.routing');
+var ContentModule = (function () {
+    function ContentModule() {
     }
-    DemoComponent.prototype.ngOnInit = function () { };
-    DemoComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/content/demo.component.html'
+    ContentModule = __decorate([
+        core_1.NgModule({
+            imports: [content_routing_1.routes, http_1.HttpModule],
+            declarations: [
+                home_component_1.HomeComponent, demo_component_1.DemoComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], DemoComponent);
-    return DemoComponent;
+    ], ContentModule);
+    return ContentModule;
 }());
-exports.DemoComponent = DemoComponent;
-//# sourceMappingURL=demo.component.js.map
+exports.ContentModule = ContentModule;
+//# sourceMappingURL=content.module.js.map

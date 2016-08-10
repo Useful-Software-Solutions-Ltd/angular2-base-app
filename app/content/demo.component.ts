@@ -1,14 +1,9 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {IComponentInfo} from '../shared/icomponent-info';
-import {MdButton} from '@angular2-material/button';
-import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
+
 
 @Component({ 
-    templateUrl: 'app/content/demo.component.html',
-      directives: [
-        MdButton,
-        MD_CARD_DIRECTIVES
-    ]
+    templateUrl: 'app/content/demo.component.html'
 })
 export class DemoComponent implements OnInit {
     info: IComponentInfo = {

@@ -1,16 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { IComponentInfo } from '../shared/icomponent-info';
-import {MdButton} from '@angular2-material/button';
-import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 
 import {QuoteService} from './quote.service';
 
 @Component({
-    templateUrl: 'app/content/home.component.html',
-    directives: [
-        MdButton,
-        MD_CARD_DIRECTIVES
-    ]
+    templateUrl: 'app/content/home.component.html'
 })
 
 export class HomeComponent implements OnInit {

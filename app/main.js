@@ -1,14 +1,17 @@
 "use strict";
-var core_1 = require('@angular/core');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var forms_1 = require('@angular/forms');
-var app_routes_1 = require('./app.routes');
-var app_component_1 = require('./app.component');
-core_1.enableProdMode();
-platform_browser_dynamic_1.bootstrap(app_component_1.AppComponent, [
-    forms_1.disableDeprecatedForms(),
-    forms_1.provideForms(),
-    app_routes_1.APP_ROUTER_PROVIDERS
-])
-    .catch(function (err) { return console.error(err); });
+var app_module_1 = require('./app.module');
+platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
+// import {enableProdMode} from '@angular/core';
+// import {bootstrap}    from '@angular/platform-browser-dynamic';
+// import { disableDeprecatedForms, provideForms } from '@angular/forms';
+// import { APP_ROUTER_PROVIDERS } from './app.routes';
+// import {AppComponent} from './app.component';
+// enableProdMode();
+// bootstrap(AppComponent, [
+//   disableDeprecatedForms(),
+//   provideForms(),
+//   APP_ROUTER_PROVIDERS
+// ])
+//   .catch(err => console.error(err)); 
 //# sourceMappingURL=main.js.map

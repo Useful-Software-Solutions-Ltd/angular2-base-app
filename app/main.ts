@@ -1,17 +1,21 @@
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule }              from './app.module';
 
-import {enableProdMode} from '@angular/core';
+platformBrowserDynamic().bootstrapModule(AppModule);
 
-import {bootstrap}    from '@angular/platform-browser-dynamic';
-import { disableDeprecatedForms, provideForms } from '@angular/forms';
-import { APP_ROUTER_PROVIDERS } from './app.routes';
+// import {enableProdMode} from '@angular/core';
 
-import {AppComponent} from './app.component';
+// import {bootstrap}    from '@angular/platform-browser-dynamic';
+// import { disableDeprecatedForms, provideForms } from '@angular/forms';
+// import { APP_ROUTER_PROVIDERS } from './app.routes';
 
-enableProdMode();
+// import {AppComponent} from './app.component';
 
-bootstrap(AppComponent, [
-  disableDeprecatedForms(),
-  provideForms(),
-  APP_ROUTER_PROVIDERS
-])
-  .catch(err => console.error(err));
+// enableProdMode();
+
+// bootstrap(AppComponent, [
+//   disableDeprecatedForms(),
+//   provideForms(),
+//   APP_ROUTER_PROVIDERS
+// ])
+//   .catch(err => console.error(err));

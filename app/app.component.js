@@ -9,16 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-var router_1 = require('@angular/router');
-var sidenav_1 = require('@angular2-material/sidenav');
-var card_1 = require('@angular2-material/card');
-var list_1 = require('@angular2-material/list');
-var icon_1 = require('@angular2-material/icon');
-var toolbar_1 = require('@angular2-material/toolbar');
-var button_1 = require('@angular2-material/button');
-var match_height_with_directive_1 = require('./shared/match-height-with.directive');
-var quote_service_1 = require('./content/quote.service');
 var AppComponent = (function () {
     function AppComponent() {
         this.info = {
@@ -33,13 +23,13 @@ var AppComponent = (function () {
         this.navRoutes.push({
             name: 'home',
             description: 'home page',
-            route: '/home',
+            route: 'home',
             icon: 'home'
         });
         this.navRoutes.push({
             name: 'demo',
             description: 'demo page',
-            route: '/demo',
+            route: 'demo',
             icon: 'description'
         });
     };
@@ -47,22 +37,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'useful-app',
             templateUrl: 'app/app.component.html',
-            styleUrls: ['app/app.component.css'],
-            providers: [
-                icon_1.MdIconRegistry,
-                http_1.HTTP_PROVIDERS,
-                quote_service_1.QuoteService
-            ],
-            directives: [
-                sidenav_1.MD_SIDENAV_DIRECTIVES,
-                list_1.MD_LIST_DIRECTIVES,
-                card_1.MD_CARD_DIRECTIVES,
-                router_1.ROUTER_DIRECTIVES,
-                toolbar_1.MD_TOOLBAR_DIRECTIVES,
-                button_1.MdButton,
-                icon_1.MdIcon,
-                match_height_with_directive_1.MatchHeightWithDirective
-            ]
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

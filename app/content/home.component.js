@@ -9,8 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var button_1 = require('@angular2-material/button');
-var card_1 = require('@angular2-material/card');
 var quote_service_1 = require('./quote.service');
 var HomeComponent = (function () {
     function HomeComponent(quoteService) {
@@ -32,11 +30,7 @@ var HomeComponent = (function () {
     };
     HomeComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/content/home.component.html',
-            directives: [
-                button_1.MdButton,
-                card_1.MD_CARD_DIRECTIVES
-            ]
+            templateUrl: 'app/content/home.component.html'
         }), 
         __metadata('design:paramtypes', [quote_service_1.QuoteService])
     ], HomeComponent);

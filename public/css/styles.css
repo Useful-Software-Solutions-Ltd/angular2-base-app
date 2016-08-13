@@ -28,10 +28,11 @@ useful-app {
 }
 
 .splash-container {
-  flex: 1;
+  height: 100%;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .splash-screen {
@@ -41,5 +42,33 @@ useful-app {
 }
 
 md-content {
-  overflow: visible !important;
+  min-height: 100%;
+  height: auto !important;
+}
+
+@keyframes oscillateAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes oscillateAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes oscillateAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes oscillateAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-oscillate {
+   -webkit-animation: oscillateAnimation 2s infinite;
+   -moz-animation: oscillateAnimation 2s infinite;
+   -o-animation: oscillateAnimation 2s infinite;
+    animation: oscillateAnimation 2s infinite;
 }

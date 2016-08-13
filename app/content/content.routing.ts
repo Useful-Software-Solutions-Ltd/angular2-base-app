@@ -19,3 +19,5 @@ export const routes: Routes = [
         component: DemoComponent
     }
 ];
+
+export const contentRouting = RouterModule.forRoot(routes);

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
-
 @Component({
     selector: 'my-dummy',
     templateUrl: 'app/content/dummy.component.html',

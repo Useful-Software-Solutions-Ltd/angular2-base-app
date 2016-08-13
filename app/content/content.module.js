@@ -9,17 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var shared_module_1 = require('../shared/shared.module');
 var home_component_1 = require('./home.component');
 var demo_component_1 = require('./demo.component');
-var http_1 = require('@angular/http');
+var quote_service_1 = require('./quote.service');
 var content_routing_1 = require('./content.routing');
 var ContentModule = (function () {
     function ContentModule() {
     }
     ContentModule = __decorate([
         core_1.NgModule({
-            imports: [content_routing_1.routes, http_1.HttpModule],
+            imports: [
+                content_routing_1.contentRouting,
+                shared_module_1.SharedModule
+            ],
+            providers: [
+                quote_service_1.QuoteService
+            ],
             declarations: [
+                home_component_1.HomeComponent, demo_component_1.DemoComponent
+            ],
+            exports: [
                 home_component_1.HomeComponent, demo_component_1.DemoComponent
             ]
         }), 

@@ -9,16 +9,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ContentModule = (function () {
-    function ContentModule() {
+var platform_browser_1 = require('@angular/platform-browser');
+var common_1 = require('@angular/common');
+var router_1 = require('@angular/router');
+var forms_1 = require('@angular/forms');
+var sidenav_1 = require('@angular2-material/sidenav');
+var card_1 = require('@angular2-material/card');
+var list_1 = require('@angular2-material/list');
+var icon_1 = require('@angular2-material/icon');
+var progress_circle_1 = require('@angular2-material/progress-circle');
+var toolbar_1 = require('@angular2-material/toolbar');
+var button_1 = require('@angular2-material/button');
+var SharedModule = (function () {
+    function SharedModule() {
     }
-    ContentModule = __decorate([
+    SharedModule = __decorate([
         core_1.NgModule({
-            declarations: []
+            imports: [
+                platform_browser_1.BrowserModule
+            ],
+            declarations: [],
+            exports: [
+                platform_browser_1.BrowserModule,
+                common_1.CommonModule,
+                router_1.RouterModule,
+                // Forms
+                forms_1.FormsModule,
+                // Material Design 
+                sidenav_1.MdSidenavModule,
+                card_1.MdCardModule,
+                list_1.MdListModule,
+                icon_1.MdIconModule,
+                progress_circle_1.MdProgressCircleModule,
+                toolbar_1.MdToolbarModule,
+                button_1.MdButtonModule
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], ContentModule);
-    return ContentModule;
+    ], SharedModule);
+    return SharedModule;
 }());
-exports.ContentModule = ContentModule;
+exports.SharedModule = SharedModule;
 //# sourceMappingURL=shared.module.js.map

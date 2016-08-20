@@ -4,7 +4,7 @@ import { IComponentInfo } from '../shared/icomponent-info';
 import {QuoteService} from './quote.service';
 
 @Component({
-    templateUrl: 'app/content/home.component.html'
+    templateUrl: './home.component.html'
 })
 
 export class HomeComponent implements OnInit {

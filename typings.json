@@ -1,7 +1,8 @@
 {
   "globalDependencies": {
     "core-js": "registry:dt/core-js#0.0.0+20160317120654",
+    "hammerjs": "registry:dt/hammerjs#2.0.8+20160724063812",
     "jasmine": "registry:dt/jasmine#2.2.0+20160412134438",
-    "node": "registry:dt/node#4.0.0+20160509154515"
-  }  
+    "node": "registry:dt/node#6.0.0+20160621231320"
+  }
 }

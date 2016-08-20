@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 
 @Component({
     selector: 'my-dummy',
-    templateUrl: './dummy.component.html',
+    templateUrl: 'app/content/dummy.component.html',
 })
 export class DummyComponent implements OnInit{
     greeting: string = 'que'; 

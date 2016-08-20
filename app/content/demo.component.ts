@@ -3,7 +3,7 @@ import {IComponentInfo} from '../shared/icomponent-info';
 
 
 @Component({ 
-    templateUrl: './demo.component.html'
+    templateUrl: 'app/content/demo.component.html'
 })
 export class DemoComponent implements OnInit {
     info: IComponentInfo = {

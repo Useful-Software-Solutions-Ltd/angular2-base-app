@@ -8,7 +8,7 @@
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\"",
     "code": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\" \"karma start karma.conf.js\"",
-    "prod": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.prod.js\"",
+    "prod": "lite-server -c bs-config.prod.js\"",
     "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
     "lint": "tslint ./app/**/*.ts -t verbose",
     "lite": "lite-server -c bs-config.js",

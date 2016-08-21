@@ -36,3 +36,4 @@ typings
 *.js
 !public/*.js
 !systemjs.config.js
+!gulpfile.js

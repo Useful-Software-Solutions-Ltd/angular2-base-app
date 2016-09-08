@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
 
+import { MdCoreModule } from '@angular2-material/core';
 import { MdSidenavModule } from '@angular2-material/sidenav';
 import { MdCardModule } from '@angular2-material/card';
 import { MdListModule } from '@angular2-material/list';
@@ -26,14 +27,15 @@ import { MdButtonModule } from '@angular2-material/button';
     RouterModule,
     // Forms
     FormsModule,
-    // Material Design 
-    MdSidenavModule,
+    // Material Design
+    MdCoreModule, 
     MdCardModule,
     MdListModule,
     MdIconModule,
     MdProgressCircleModule,
     MdToolbarModule,
-    MdButtonModule
+    MdButtonModule,
+    MdSidenavModule
   ]
 })
 export class SharedModule { }

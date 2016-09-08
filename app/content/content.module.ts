@@ -7,8 +7,6 @@ import {DemoComponent} from './demo.component';
 
 import { QuoteService } from './quote.service';
 
-import { HttpModule } from '@angular/http';
-
 import { contentRouting } from './content.routing';
 
 @NgModule({

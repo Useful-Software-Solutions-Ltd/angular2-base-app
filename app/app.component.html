@@ -5,9 +5,9 @@
                 <md-toolbar color="primary">
                     <span>U</span>
                     <span class="fill-remaining-space"></span>
-                    <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened">
+                    <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened">
                         <md-icon aria-label="Menu" class="material-icons">close</md-icon>
-                    </md-button>
+                    </button>
                 </md-toolbar>
                 <md-nav-list>
                     <a md-list-item *ngFor="let navRoute of navRoutes" [routerLink]="navRoute.route" (click)="sidenav.toggle()">
@@ -24,9 +24,9 @@
     </md-sidenav>
     <div #appWrapper class="appWrapper">
         <md-toolbar color="primary">
-            <md-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
+            <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
                 <md-icon aria-label="Menu" class="material-icons">menu</md-icon>
-            </md-button>
+            </button>
             <h1 class="component-title">{{info.title}}</h1>
         </md-toolbar>
         <router-outlet></router-outlet>

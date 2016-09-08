@@ -4,12 +4,15 @@ import { AppComponent }   from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ContentModule } from './content/content.module';
 
-//import { QuoteService } from './content/quote.service';
+import { MdIconRegistry } from '@angular2-material/icon';
 
 @NgModule({
      imports: [
         SharedModule,
         ContentModule
+    ],
+    providers:[
+        MdIconRegistry
     ],
     declarations: [
         AppComponent
@@ -17,6 +20,5 @@ import { ContentModule } from './content/content.module';
     bootstrap: [
         AppComponent
         ]
-    // providers: [ QuoteService ],
 })
 export class AppModule {}

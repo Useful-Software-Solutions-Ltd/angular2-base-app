@@ -8,7 +8,7 @@ export const routes: Routes = [
     {
         path: '',
         redirectTo: 'home',
-        terminal: true
+        pathMatch: 'full'
     },
     {
         path: 'home',

@@ -9,14 +9,16 @@ module.exports = function (config) {
       // Polyfills.
       'node_modules/core-js/client/shim.min.js',
 
-      'node_modules/reflect-metadata/Reflect.js',
-
       // System.js for module loading
       'node_modules/systemjs/dist/system-polyfills.js',
       'node_modules/systemjs/dist/system.src.js',
 
-      // Zone.js dependencies
+      // Reflect and Zone.js
+      'node_modules/reflect-metadata/Reflect.js',
       'node_modules/zone.js/dist/zone.js',
+      'node_modules/zone.js/dist/long-stack-trace-zone.js',
+      'node_modules/zone.js/dist/proxy.js',
+      'node_modules/zone.js/dist/sync-test.js',
       'node_modules/zone.js/dist/jasmine-patch.js',
       'node_modules/zone.js/dist/async-test.js',
       'node_modules/zone.js/dist/fake-async-test.js',
@@ -25,19 +27,22 @@ module.exports = function (config) {
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
 
-
       { pattern: 'karma-test-shim.js', included: true, watched: true },
+      { pattern: 'systemjs.config.js', included: false, watched: false},
 
       // paths loaded via module imports
       // Angular itself
       { pattern: 'node_modules/@angular/**/*.js', included: false, watched: true },
       { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: true },
 
-      //import material2 tools
-      { pattern: 'node_modules/@angular2-material/**/*.js', included: false, watched: true },
-      { pattern: 'node_modules/@angular2-material/**/*.js.map', included: false, watched: true },
+      //application code
+      { pattern: 'src/**/*.js', included: false, watched: true },
+      { pattern: 'src/**/*.html', included: false, watched: true },
+      { pattern: 'src/**/*.css', included: false, watched: true },
+      { pattern: 'src/**/*.ts', included: false, watched: false },
+      { pattern: 'src/**/*.js.map', included: false, watched: false },
 
-      //application code      
+      //app code
       { pattern: 'app/**/*.js', included: false, watched: true },
       { pattern: 'app/**/*.html', included: false, watched: true },
       { pattern: 'app/**/*.css', included: false, watched: true },
@@ -53,7 +58,7 @@ module.exports = function (config) {
     // proxied base paths make sure the template and css urls get redirected to /base/...
     proxies: {
       "/src/": "/base/src/",
-      "/demo/": "/base/demo/"
+      "/app/": "/base/app/"
     },
 
     reporters: ['verbose'],

@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {IComponentInfo} from '../shared/icomponent-info';
 
-
 @Component({ 
     moduleId: module.id,
     templateUrl: 'demo.component.html'

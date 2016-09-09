@@ -41,7 +41,7 @@ useful-app {
   text-align: center;
 }
 
-md-content {
+md-content, .md-sidenav-content {
   min-height: 100%;
   height: auto !important;
 }

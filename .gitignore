@@ -37,3 +37,5 @@ typings
 !public/*.js
 !systemjs.config.js
 !gulpfile.js
+
+npm-debug.log.*

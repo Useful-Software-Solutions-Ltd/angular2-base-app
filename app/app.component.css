@@ -1,88 +1,77 @@
 md-sidenav-layout {
-  height: auto;
-}
+    height: auto;
+  }
 
-footer {
-  background-color: rgba(47, 79,79, 10);
-  color: whitesmoke;  
-  padding: 5px;
-  display: flex;
-  flex-direction: column;        
-  align-items: stretch;
-  align-content: stretch;
-  justify-content: flex-start;
-}
+  .footer-content{
+    flex: 0.8
+  }
 
-.footer-content{
-  flex: 0.8
-}
+  .footer-copyright {
+    flex:0.2;
+    text-align: center;
+    align-content: center;
+    vertical-align: bottom;
+  }
 
-.footer-copyright {
-  flex:0.2;  
-  text-align: center;
-  align-content: center;
-  vertical-align: bottom;
-}
+  router-outlet{
+    display: none;
+  }
 
-router-outlet{
-  display: none;
-}
+  .sidenav-toggle-button {
+      cursor: pointer;
+      margin-right: 10px;
+  }
 
-.sidenav-toggle-button {  
-    cursor: pointer;
-    margin-right: 10px;
-}
+  md-nav-list {
+      padding-top: 0;
+  }
 
-md-nav-list {
-    padding-top: 0;
-}
+  .fill-remaining-space {
+    flex: 1 1 auto;
+  }
 
-.fill-remaining-space {
-  flex: 1 1 auto;
-}
+  .appWrap{
+    height: auto;
+  }
 
-.appWrap{
-  height: auto;
-}
+  #sidenavLayout {
+    height: auto;
+  }
 
-#sidenavLayout {  
-  height: auto;
-}
+  #sidenav-flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: flex-start;
+    overflow: visible;
+  }
 
-#sidenav-flex{
-  height: 100%;
-  display: flex;
-  flex-direction: column;        
-  align-items: stretch;
-  align-content: stretch;
-  justify-content: flex-start;
-  overflow: visible;
-}
+  #sidenav-content {
+    flex:0.95;
+  }
 
-#sidenav-content {
-  flex:0.95;
-}
+  #sidenav-footer {
+    flex:0.05;
+    /*background-color: md-color($primary);
+    color: md-color($primary, default-contrast);*/
+    align-content: center;
+    text-align: center;
+  }
 
-#sidenav-footer {
-  flex:0.05;
-  background-color: rgba(47, 79,79, 10);
-  color: whitesmoke; 
-  align-content: center;
-  text-align: center;
-}
+  .app-sidenav {
+    flex:0.9
+  }
 
-.app-sidenav {
-  flex:0.9
-}
+  footer{
+    flex:0.1;
+  }
 
-footer{
-  flex:0.1;
-}
+  .appWrap {
+    flex:0.9;
+  }
 
-.appWrap {
-  flex:0.9;
-}
-
-footer{
-  flex:0.1;
-}
+  footer{
+    flex:0.1;
+  }

@@ -4,15 +4,18 @@ import { AppComponent }   from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ContentModule } from './content/content.module';
 
-import { MdIconRegistry } from '@angular2-material/icon';
+import { MaterialModule } from '@angular/material';
+
+//import { MdIconRegistry } from '@angular2-material/icon';
 
 @NgModule({
      imports: [
         SharedModule,
-        ContentModule
+        ContentModule,
+        MaterialModule.forRoot()
     ],
     providers:[
-        MdIconRegistry
+       //MdIconRegistry
     ],
     declarations: [
         AppComponent

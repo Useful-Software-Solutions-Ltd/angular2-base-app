@@ -6,19 +6,18 @@
     "test": "test"
   },
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\"",
-    "code": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\" \"karma start karma.conf.js\"",
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\" \"nodemon --watch app -e scss\"",
+    "code": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\" \"karma start karma.conf.js\" \"node-sass public/css/ -o public/css/\"",
     "prod": "lite-server -c bs-config.prod.js\"",
     "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
     "lint": "tslint ./app/**/*.ts -t verbose",
     "lite": "lite-server -c bs-config.js",
-    "sass": "node-sass public/css/ -o public/css/",
-    "app-sass": "node-sass app/ -o app/",
+    "sass": "node-sass public/css/ -o public/css/ --output-style compressed",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
     "setup": "typings install && npm install",
-    "build": "gulp build-app"
+    "build": "npm run sass && gulp build-app"
   },
   "keywords": [
     "Angular2"
@@ -62,6 +61,7 @@
     "karma-verbose-reporter": "0.0.3",
     "lite-server": "^2.2.0",
     "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2",
     "protractor": "^3.3.0",
     "tslint": "^3.7.4",
     "typescript": "^2.0.2",
